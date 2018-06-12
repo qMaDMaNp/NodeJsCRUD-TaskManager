@@ -1,0 +1,14 @@
+<div class="card-group">
+    <div class="card card-default">
+        <div class="card-heading">
+            <h3 class="card-title">{{title}} <span class="badge badge-secondary">{{priority}}</span></h3>
+        </div>
+        <div class="card-body">{{description}}</div>
+    </div>
+    <div class="card-footer">{{date}}</div>
+</div>
+<a href="/todos/{{id}}/edit" style="margin-top: 20px;" class="btn btn-warning">Edit</a>
+<form action="/todos/{{id}}?_method=DELETE" style="display: inline-block; "method="post">
+    <button type="submit" style="margin-top: 20px;" class="btn btn-danger">Delete</button>
+</form>
+<a href="/todos" style="margin-top: 20px;" class="btn btn-info">Back</a>
